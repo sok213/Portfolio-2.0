@@ -1,53 +1,44 @@
 import React, { Component } from 'react';
 import s from './Panels.module.scss';
+import PropTypes from 'prop-types';
 
 class Panels extends Component {
 
     constructor(props) {
         super(props);
 
-        this.state = {
-            activePanel: 1
+        this.state = { 
+
         }
     }
 
-    nextSlide = () => {
-        if(this.state.activePanel !== 4) {
-            this.setState({
-                activePanel: this.state.activePanel + 1 
-            });
-        }
-    }
-
-    prevSlide = () => {
-        if(this.state.activePanel !== 1) {
-            this.setState({
-                activePanel: this.state.activePanel - 1 
-            });
-        }
+    static propTypes = {
+        prevSlide: PropTypes.func,
+        nextSlide: PropTypes.func,
+        activePanel: PropTypes.number
     }
 
     renderPanel = () => {
-        const activePanel = this.state.activePanel;
-        if(activePanel == 1) {
+        const activePanel = this.props.activePanel;
+        if(activePanel === 1) {
             return (
                 <div className={s.panelContents}>
                     <p>Panel #1</p>
                 </div>
             );
-        } else if (activePanel == 2) {
+        } else if (activePanel === 2) {
             return (
                 <div className={s.panelContents}>
                     <p>Panel #2</p>
                 </div>
             );
-        } else if (activePanel == 3) {
+        } else if (activePanel === 3) {
             return (
                 <div className={s.panelContents}>
                     <p>Panel #3</p>
                 </div>
             );
-        } else if (activePanel == 4) {
+        } else if (activePanel === 4) {
             return (
                 <div className={s.panelContents}>
                     <p>Panel #4</p>

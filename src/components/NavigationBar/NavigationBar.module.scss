@@ -3,3 +3,13 @@
     background: #42A5F5;
     color: white;
 }
+
+.navItemsContainer {
+    display: flex;
+
+    li {
+        display: block;
+        list-style-type: none;
+        flex-grow: 1;
+    }
+}
