@@ -51,8 +51,8 @@ class Panels extends Component {
         return (
             <div className={s.panelsContainer}>
                 {this.renderPanel()}
-                <button onClick={this.prevSlide}>Previous slide.</button>
-                <button onClick={this.nextSlide}>Next slide.</button>
+                <button onClick={this.props.prevSlide}>Previous slide.</button>
+                <button onClick={this.props.nextSlide}>Next slide.</button>
             </div>
         )
     }

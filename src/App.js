@@ -14,8 +14,7 @@ class App extends Component {
 	}
 
 	navigateTo = (page) => {
-		console.log('Test');
-		this.setState({ activePage: page });
+		this.setState({ activePanel: page });
 	}
 
 	nextSlide = () => {
@@ -39,7 +38,7 @@ class App extends Component {
 			<div className={s.App}>
 				<div className={s.siteContent}>
 					<Panels 
-						activePage={this.state.activePanel}
+						activePanel={this.state.activePanel}
 						nextSlide={this.nextSlide}
 						prevSlide={this.prevSlide}
 					/>
