@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import s from './App.module.scss';
 import Panels from './components/Panels/Panels';
-import NavigationDots from './components/NavigationDots/NavigationDots';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 
 class App extends Component {
 	render() {
@@ -11,7 +11,7 @@ class App extends Component {
 				<div className={s.siteContent}>
 					<Panels />
 				</div>
-				<NavigationDots />
+				<NavigationBar />
 			</div>
 		);
 	}
