@@ -1,5 +1,8 @@
-.panelsContainer {
+@import '../styles/common.scss';
 
+.panelsContainer {
+    @extend .fadeIn;
+    
     p {
         color: white;
     }

@@ -18,20 +18,20 @@ class App extends Component {
 	}
 
 	nextSlide = () => {
-        if(this.state.activePanel !== 4) {
-            this.setState({
-                activePanel: this.state.activePanel + 1 
-            });
-        }
-    }
+		if(this.state.activePanel !== 4) {
+			this.setState({
+				activePanel: this.state.activePanel + 1 
+			});
+		}
+	}
 
-    prevSlide = () => {
-        if(this.state.activePanel !== 1) {
-            this.setState({
-                activePanel: this.state.activePanel - 1 
-            });
-        }
-    }
+	prevSlide = () => {
+		if(this.state.activePanel !== 1) {
+			this.setState({
+				activePanel: this.state.activePanel - 1 
+			});
+		}
+	}
 
 	render() {
 		return (

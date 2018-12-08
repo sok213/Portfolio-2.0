@@ -1,0 +1,12 @@
+@import './common.scss';
+
+.header {
+    color: rgb(54, 54, 54);
+    margin-bottom: 0px;
+}
+
+p {
+    @extend .fadeIn;
+    line-height: 22px;
+    color: rgb(54, 54, 54) ;
+}

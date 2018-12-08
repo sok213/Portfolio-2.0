@@ -1,4 +1,7 @@
+@import '../styles/common.scss';
+
 .navigationContainer {
+    @extend .fadeIn;
     height: 50px;
     background: #42A5F5;
     color: white;
@@ -11,5 +14,10 @@
         display: block;
         list-style-type: none;
         flex-grow: 1;
+        text-align: center;
+
+        @media screen and (max-width: 420px) {
+            text-align: left;
+        }
     }
 }
