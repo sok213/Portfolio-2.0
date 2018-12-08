@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import s from './NavigationDots.scss';
+import s from './NavigationDots.module.scss';
 
 class NavigationDots extends Component {
 	render() {
 		return (
-			<div>
-                <p>Navigation Dots Component</p>
+			<div className={s.navigationContainer}>
 			</div>
-		)
+		);
 	}
 }
 
