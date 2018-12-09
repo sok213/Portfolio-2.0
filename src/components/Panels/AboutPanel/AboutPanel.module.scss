@@ -4,6 +4,11 @@
 .aboutPanelContainer {
     padding: 10px 20px;
     display: flex;
+    flex-direction: row;
     flex: 1 0 auto;
     padding: var( — space) var( — space) 0;
+
+    @media only screen and (max-width : 770px) {
+        flex-direction: column;
+    }
 }
