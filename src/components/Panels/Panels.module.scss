@@ -2,6 +2,11 @@
 
 .panelsContainer {
     @extend .fadeIn;
+    flex: 1 0 auto;
+    padding: var( — space) var( — space) 0;
+
+    display: flex;
+    flex-direction: column;
     
     p {
         color: white;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import s from './Panels.module.scss';
 import PropTypes from 'prop-types';
+import WelcomePanel from './WelcomePanel/WelcomePanel';
+import AboutPanel from './AboutPanel/AboutPanel';
 
 class Panels extends Component {
 
@@ -22,17 +24,9 @@ class Panels extends Component {
     renderPanel = () => {
         const activePanel = this.props.activePanel;
         if(activePanel === 1) {
-            return (
-                <div className={s.panelContents}>
-                    <p>Panel #1</p>
-                </div>
-            );
+            return <WelcomePanel />;
         } else if (activePanel === 2) {
-            return (
-                <div className={s.panelContents}>
-                    <p>Panel #2</p>
-                </div>
-            );
+            return <AboutPanel />;
         } else if (activePanel === 3) {
             return (
                 <div className={s.panelContents}>
@@ -48,20 +42,10 @@ class Panels extends Component {
         }
     }
 
-    renderButtons() {
-        return (
-            <div className={s.fadeIn}>
-                <button onClick={this.props.prevSlide}>Previous slide.</button>
-                <button onClick={this.props.nextSlide}>Next slide.</button>
-            </div>
-        )
-    }
-
     render() {
         return (
             <div className={s.panelsContainer}>
                 {this.props.rendering ? null : this.renderPanel()}
-                {this.props.rendering ? null : this.renderButtons()}
             </div>
         )
     }

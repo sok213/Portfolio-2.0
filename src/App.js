@@ -35,34 +35,34 @@ class App extends Component {
 		}, ms);
 	}
 
-	nextSlide = () => {
-		if(this.state.activePanel !== 4) {
-			this.setState({
-				activePanel: this.state.activePanel + 1,
-				rendering: true
-			});
-		}
+	// nextSlide = () => {
+	// 	if(this.state.activePanel !== 4) {
+	// 		this.setState({
+	// 			activePanel: this.state.activePanel + 1,
+	// 			rendering: true
+	// 		});
+	// 	}
 
-		this.delayStateChange(200, 'rendering', false);
-        this.delayStateChange(1000, 'buttonActive', false);
-	}
+	// 	this.delayStateChange(200, 'rendering', false);
+    //     this.delayStateChange(1000, 'buttonActive', false);
+	// }
 
-	prevSlide = () => {
-		if(this.state.activePanel !== 1) {
-			this.setState({
-				activePanel: this.state.activePanel - 1,
-				rendering: true 
-			});
-		}
+	// prevSlide = () => {
+	// 	if(this.state.activePanel !== 1) {
+	// 		this.setState({
+	// 			activePanel: this.state.activePanel - 1,
+	// 			rendering: true 
+	// 		});
+	// 	}
 
-		this.delayStateChange(200, 'rendering', false);
-        this.delayStateChange(1000, 'buttonActive', false);
-	}
+	// 	this.delayStateChange(200, 'rendering', false);
+    //     this.delayStateChange(1000, 'buttonActive', false);
+	// }
 
 	render() {
 		return (
 			<div className={s.App}>
-				<div className={s.siteContent}>
+				<div className={s.panelContainer}>
 					<Panels
 						rendering={this.state.rendering} 
 						activePanel={this.state.activePanel}

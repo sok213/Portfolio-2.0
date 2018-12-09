@@ -3,10 +3,23 @@
 .header {
     color: rgb(54, 54, 54);
     margin-bottom: 0px;
+
+    h2 {
+        color: white;
+    }
 }
 
 p {
     @extend .fadeIn;
     line-height: 22px;
     color: rgb(54, 54, 54) ;
+}
+
+.underline {
+    height: 4px;
+    width: 60px;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6px;
 }
