@@ -2,5 +2,9 @@
 @import '../../styles/common.scss';
 
 .aboutPanelContainer {
-    border: thin solid red;
+    @extend .fadeIn;
+    padding: 10px 20px;
+    display: flex;
+    flex: 1 0 auto;
+    padding: var( — space) var( — space) 0;
 }
