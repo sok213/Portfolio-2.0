@@ -2,7 +2,6 @@
 @import '../../styles/common.scss';
 
 .aboutPanelContainer {
-    @extend .fadeIn;
     padding: 10px 20px;
     display: flex;
     flex: 1 0 auto;
