@@ -14,7 +14,10 @@ class DevItem extends Component {
 
     render() {
         return (
-            <div className={s.DevItemContainer}>
+            <div className={`
+                ${s.devItemContainer}
+                ${s[this.props.className]}
+            `}>
                 <p>DevItem Component</p>
             </div>
         )

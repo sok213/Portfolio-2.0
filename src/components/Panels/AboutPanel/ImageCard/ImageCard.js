@@ -18,7 +18,7 @@ class ImageCard extends Component {
                 <Animated 
                     animationIn="fadeInDown" 
                     isVisible={true} 
-                    className={s.test}
+                    className={s.imageCardItem}
                 >
                     <div className={s.imageCardContent}>
                         <p>ImageCard Component.</p>

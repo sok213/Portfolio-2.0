@@ -1,0 +1,15 @@
+@import '../../../styles/typography.scss';
+@import '../../../styles/common.scss';
+
+.devItemContainer {
+    @extend .subtleShadow;
+    margin: 10px;
+    background-color: white;
+    border-radius: 3px;
+    flex-grow: 1;
+    flex: 1 0 auto;
+    
+    p {
+        color: black;
+    }
+}

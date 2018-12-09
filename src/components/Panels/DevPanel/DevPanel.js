@@ -13,23 +13,26 @@ class DevPanel extends Component {
                 {
                     title: 'Item #1',
                     desc: 'This is a test description',
+                    animation: 'fadeInUpBig'
                 },
                 {
                     title: 'Item #2',
                     desc: 'This is a test description',
+                    animation: 'fadeInDown'
                 },
                 {
                     title: 'Item #3',
                     desc: 'This is a test description',
+                    animation: 'fadeInRight'
                 },
-                {
-                    title: 'Item #4',
-                    desc: 'This is a test description',
-                },
-                {
-                    title: 'Item #5',
-                    desc: 'This is a test description',
-                }
+                // {
+                //     title: 'Item #4',
+                //     desc: 'This is a test description',
+                // },
+                // {
+                //     title: 'Item #5',
+                //     desc: 'This is a test description',
+                // }
             ]
         }
     }
@@ -37,10 +40,15 @@ class DevPanel extends Component {
     render() {
         return (
             <div className={s.devPanelContainer}>
-                <p>DevPanel Component.</p>
                 {this.state.devItems.map((item) => {
                     return (
-                        <DevItem />
+                        <Animated 
+                            animationIn={item.animation} 
+                            isVisible={true} 
+                            className={s.devItem}
+                        >
+                            <DevItem className={item.type} />
+                        </Animated>
                     )
                 })}
             </div>

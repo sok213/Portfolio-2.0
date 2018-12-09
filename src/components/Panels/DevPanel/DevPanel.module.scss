@@ -1,2 +1,25 @@
 @import '../../styles/typography.scss';
 @import '../../styles/common.scss';
+
+.devPanelContainer {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    padding: 20px 20px;
+
+    @media only screen and (max-width : 900px) {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+}
+
+.devItem {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.devItem:nth-child(1) {
+    @media only screen and (max-width : 900px) {
+        order: 3;
+    }
+}
