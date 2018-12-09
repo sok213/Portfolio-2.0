@@ -15,7 +15,8 @@ class Panels extends Component {
     static propTypes = {
         prevSlide: PropTypes.func,
         nextSlide: PropTypes.func,
-        activePanel: PropTypes.number
+        activePanel: PropTypes.number,
+        rendering: PropTypes.bool
     }
 
     renderPanel = () => {
@@ -47,12 +48,20 @@ class Panels extends Component {
         }
     }
 
+    renderButtons() {
+        return (
+            <div className={s.fadeIn}>
+                <button onClick={this.props.prevSlide}>Previous slide.</button>
+                <button onClick={this.props.nextSlide}>Next slide.</button>
+            </div>
+        )
+    }
+
     render() {
         return (
             <div className={s.panelsContainer}>
-                {this.renderPanel()}
-                <button onClick={this.props.prevSlide}>Previous slide.</button>
-                <button onClick={this.props.nextSlide}>Next slide.</button>
+                {this.props.rendering ? null : this.renderPanel()}
+                {this.props.rendering ? null : this.renderButtons()}
             </div>
         )
     }

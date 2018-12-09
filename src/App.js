@@ -9,35 +9,62 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			activePanel: 1
+			activePanel: 1,
+			rendering: false,
+            buttonActive: false,
 		}
 	}
 
 	navigateTo = (page) => {
-		this.setState({ activePanel: page });
+		this.setState({ 
+			activePanel: page,
+			rendering: true
+		});
+
+		this.delayStateChange(200, 'rendering', false);
+		this.delayStateChange(1000, 'buttonActive', false);
+	}
+
+	delayStateChange(
+		ms,
+		key,
+		value
+	) {
+		setTimeout(() => {
+			this.setState({ [key]: value });
+		}, ms);
 	}
 
 	nextSlide = () => {
 		if(this.state.activePanel !== 4) {
 			this.setState({
-				activePanel: this.state.activePanel + 1 
+				activePanel: this.state.activePanel + 1,
+				rendering: true
 			});
 		}
+
+		this.delayStateChange(200, 'rendering', false);
+        this.delayStateChange(1000, 'buttonActive', false);
 	}
 
 	prevSlide = () => {
 		if(this.state.activePanel !== 1) {
 			this.setState({
-				activePanel: this.state.activePanel - 1 
+				activePanel: this.state.activePanel - 1,
+				rendering: true 
 			});
 		}
+
+		this.delayStateChange(200, 'rendering', false);
+        this.delayStateChange(1000, 'buttonActive', false);
 	}
 
 	render() {
 		return (
 			<div className={s.App}>
 				<div className={s.siteContent}>
-					<Panels 
+					<Panels
+						rendering={this.state.rendering} 
 						activePanel={this.state.activePanel}
 						nextSlide={this.nextSlide}
 						prevSlide={this.prevSlide}
