@@ -9,7 +9,7 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			activePanel: 1,
+			activePanel: 2,
 			rendering: false,
             buttonActive: false,
 		}

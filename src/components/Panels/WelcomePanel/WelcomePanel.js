@@ -18,6 +18,7 @@ class WelcomePanel extends Component {
                     <div className={s.header}>  
                         <h2>Sophanarith Sok</h2>
                         <div className={s.underline}></div>
+                        <p>Just call me / sōk /</p>
                     </div>
 
                     <div className={s.introduction}>

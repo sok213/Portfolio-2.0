@@ -16,10 +16,18 @@ class NavigationBar extends Component {
 		return (
 			<div className={s.navigationContainer}>
 				<ul className={s.navItemsContainer}>
-					<li onClick={this.navigateTo.bind(this, 1)}>Welcome</li>
-					<li onClick={this.navigateTo.bind(this, 2)}>About</li>
-					<li onClick={this.navigateTo.bind(this, 3)}>Projects</li>
-					<li onClick={this.navigateTo.bind(this, 4)}>Discover</li>
+					<li onClick={this.navigateTo.bind(this, 1)}>
+						<span>Hi</span>
+					</li>
+					<li onClick={this.navigateTo.bind(this, 2)}>
+						<span>Bio</span>
+					</li>
+					<li onClick={this.navigateTo.bind(this, 3)}>
+						<span>Dev</span>
+					</li>
+					<li onClick={this.navigateTo.bind(this, 4)}>
+						<span>Discover</span>
+					</li>
 				</ul>
 			</div>
 		);

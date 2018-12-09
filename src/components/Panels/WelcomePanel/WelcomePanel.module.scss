@@ -11,12 +11,14 @@
 }
 
 .overlay {
-    border-radius: 3px;
+    border-radius: 4px;
     width: 100%;
     max-width: 500px;
     margin: 10px;
     padding: 10px 25px;
     background-color: rgba(0, 0, 0, 0.4);
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .header {

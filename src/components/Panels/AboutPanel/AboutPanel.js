@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from './AboutPanel.module.scss';
 import PropTypes from 'prop-types';
+import TextCard from './TextCard/TextCard';
 
 class AboutPanel extends Component {
     constructor(props) {
@@ -13,8 +14,8 @@ class AboutPanel extends Component {
 
     render() {
         return (
-            <div>
-                <p>About Me.</p>
+            <div className={s.aboutPanelContainer}>
+                <TextCard />
             </div>
         )
     }

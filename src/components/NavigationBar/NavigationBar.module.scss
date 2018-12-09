@@ -3,21 +3,40 @@
 .navigationContainer {
     @extend .fadeIn;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
 
 .navItemsContainer {
     display: flex;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
 
     li {
-        display: block;
+        display: flex;
+        align-items: center;
         list-style-type: none;
         flex-grow: 1;
-        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: 0.2s;
+
+        a {
+            height: 100%;
+            width: 100%;
+        }
+
+        span {
+            text-align: center;
+            width: 100%;
+        }
 
         @media screen and (max-width: 420px) {
             text-align: left;
         }
+    }
+
+    li:hover {
+        background-color: rgba(0, 0, 0, 0.45);
     }
 }
