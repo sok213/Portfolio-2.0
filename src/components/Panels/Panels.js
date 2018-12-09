@@ -3,6 +3,7 @@ import s from './Panels.module.scss';
 import PropTypes from 'prop-types';
 import WelcomePanel from './WelcomePanel/WelcomePanel';
 import AboutPanel from './AboutPanel/AboutPanel';
+import DevPanel from './DevPanel/DevPanel';
 
 class Panels extends Component {
 
@@ -28,11 +29,7 @@ class Panels extends Component {
         } else if (activePanel === 2) {
             return <AboutPanel />;
         } else if (activePanel === 3) {
-            return (
-                <div className={s.panelContents}>
-                    <p>Panel #3</p>
-                </div>
-            );
+            return <DevPanel />;
         } else if (activePanel === 4) {
             return (
                 <div className={s.panelContents}>

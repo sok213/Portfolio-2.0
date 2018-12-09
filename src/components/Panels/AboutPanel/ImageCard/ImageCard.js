@@ -15,7 +15,11 @@ class ImageCard extends Component {
     render() {
         return (
             <div className={s.imageCardContainer}>
-                <Animated animationIn="fadeInDown" isVisible={true} className={s.test}>
+                <Animated 
+                    animationIn="fadeInDown" 
+                    isVisible={true} 
+                    className={s.test}
+                >
                     <div className={s.imageCardContent}>
                         <p>ImageCard Component.</p>
                     </div>
