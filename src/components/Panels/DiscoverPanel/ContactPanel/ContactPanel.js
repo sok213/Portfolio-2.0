@@ -15,18 +15,21 @@ class ContactPanel extends Component {
         return (
             <div className={s.contactPanelContainer}>
                 <div className={s.contactPanel}>
-                    <form>
+                    <form 
+                        action="https://formspree.io/sokcodes@gmail.com" 
+                        method="POST"
+                    >
                         <label>
                             Name:
                             <input type="text" name="name" />
                         </label>
                         <label>
-                            Subject:
-                            <input type="text" name="name" />
+                            Email:
+                            <input type="email" name="reply_to" />
                         </label>
                         <label>
                             Message:
-                            <textarea type="text" name="name" />
+                            <textarea type="text" name="message" />
                         </label>
                         <input type="submit" value="Send" />
                     </form>
