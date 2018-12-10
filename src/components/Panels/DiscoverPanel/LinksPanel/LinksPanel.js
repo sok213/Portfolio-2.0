@@ -15,7 +15,13 @@ class LinksPanel extends Component {
         return (
             <div className={s.linksPanelContainer}>
                 <div className={s.linksPanel}>
-                    <p>LinksPanel Component.</p>
+                    <h4>Social Media</h4>
+                    <ul className={s.socialMediaLinks}>
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #1</a></li>
+                    </ul>
                 </div>
             </div>
         )

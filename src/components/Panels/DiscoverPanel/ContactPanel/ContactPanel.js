@@ -14,7 +14,23 @@ class ContactPanel extends Component {
     render() {
         return (
             <div className={s.contactPanelContainer}>
-                <p>ContactPanel Component.</p>
+                <div className={s.contactPanel}>
+                    <form>
+                        <label>
+                            Name:
+                            <input type="text" name="name" />
+                        </label>
+                        <label>
+                            Subject:
+                            <input type="text" name="name" />
+                        </label>
+                        <label>
+                            Message:
+                            <textarea type="text" name="name" />
+                        </label>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
             </div>
         )
     }

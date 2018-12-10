@@ -1,3 +1,12 @@
 .contactPanelContainer {
-    // border: thin solid blue;
+    border: thin solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactPanel {
+    border: thin solid yellow;
+    padding: 10px 20px;
 }
