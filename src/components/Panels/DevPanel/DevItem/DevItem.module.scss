@@ -4,12 +4,76 @@
 .devItemContainer {
     @extend .subtleShadow;
     margin: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
     flex-grow: 1;
     flex: 1 0 auto;
+    display: flex;
     
     p {
         color: black;
     }
+}
+
+.devItemContainer:hover {
+
+    .overlayTextContainer {
+        opacity: 0.8;
+    }
+}
+
+.overlayTextContainer {
+    border-radius: 3px;
+    opacity: 0;
+    display: flex;
+    background-color: #3f384d;
+    flex: 1 0 auto;
+    transition: 0.4s;
+    align-items: center;
+
+    .overlayText {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px 25px;
+
+        h4 {
+            color: white !important;
+        }
+
+        p {
+            text-align: justify;
+            color: white !important;
+            max-width: 330px;
+
+            @media screen and (max-width: 1241px) {
+                max-width: 300px;
+            }
+
+            @media screen and (max-width: 1150px) {
+                max-width: 250px;
+            }
+
+            @media screen and (max-width: 999px) {
+                max-width: 220px;
+            }
+
+            @media screen and (max-width: 900px) {
+                max-width: 700px;
+            }
+
+            @media screen and (max-width: 790px) {
+                max-width: 650px;
+            }
+
+            @media screen and (max-width: 740px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.underline {
+    background-color: rgb(51, 126, 196);
 }
