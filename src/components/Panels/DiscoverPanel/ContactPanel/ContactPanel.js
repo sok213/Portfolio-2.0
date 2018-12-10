@@ -19,19 +19,29 @@ class ContactPanel extends Component {
                         action="https://formspree.io/sokcodes@gmail.com" 
                         method="POST"
                     >
-                        <label>
-                            Name:
-                            <input type="text" name="name" />
-                        </label>
-                        <label>
-                            Email:
-                            <input type="email" name="reply_to" />
-                        </label>
-                        <label>
-                            Message:
-                            <textarea type="text" name="message" />
-                        </label>
-                        <input type="submit" value="Send" />
+                        <ul className='flex-outer'>
+                            <li>
+                                <label>
+                                    Name:
+                                    <input type="text" name="name" />
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Email:
+                                    <input type="email" name="reply_to" />
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    Message:
+                                    <textarea type="text" name="message" />
+                                </label>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send" />
+                            </li>
+                        </ul>
                     </form>
                 </div>
             </div>
