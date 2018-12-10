@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import WelcomePanel from './WelcomePanel/WelcomePanel';
 import AboutPanel from './AboutPanel/AboutPanel';
 import DevPanel from './DevPanel/DevPanel';
+import DiscoverPanel from './DiscoverPanel/DiscoverPanel';
 
 class Panels extends Component {
 
@@ -31,11 +32,7 @@ class Panels extends Component {
         } else if (activePanel === 3) {
             return <DevPanel />;
         } else if (activePanel === 4) {
-            return (
-                <div className={s.panelContents}>
-                    <p>Panel #4</p>
-                </div>
-            );
+            return <DiscoverPanel />;
         }
     }
 
