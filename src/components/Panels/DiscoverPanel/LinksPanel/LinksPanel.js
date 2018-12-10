@@ -14,7 +14,9 @@ class LinksPanel extends Component {
     render() {
         return (
             <div className={s.linksPanelContainer}>
-                <p>LinksPanel Component.</p>
+                <div className={s.linksPanel}>
+                    <p>LinksPanel Component.</p>
+                </div>
             </div>
         )
     }

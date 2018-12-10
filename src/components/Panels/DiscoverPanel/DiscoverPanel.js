@@ -16,10 +16,14 @@ class DiscoverPanel extends Component {
 
     render() {
         return (
-            <div className={s.discoverPanelCompoonent}>
-                <BlogPanel />
-                <ContactPanel />
-                <LinksPanel />
+            <div className={s.discoverPanelComponent}>
+                <div className={s.leftPanel}>
+                    <BlogPanel />
+                </div>
+                <div className={s.rightPanel}>
+                    <ContactPanel />
+                    <LinksPanel />
+                </div>
             </div>
         )
     }
