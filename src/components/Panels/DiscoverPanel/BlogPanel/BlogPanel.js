@@ -13,7 +13,7 @@ class BlogPanel extends Component {
 
     render() {
         return (
-            <div className={s.BlogPanelCompoonent}>
+            <div className={s.blogPanelContainer}>
                 <p>BlogPanel Component.</p>
             </div>
         )

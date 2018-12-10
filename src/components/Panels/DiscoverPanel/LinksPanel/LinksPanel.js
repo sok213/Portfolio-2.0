@@ -13,7 +13,7 @@ class LinksPanel extends Component {
 
     render() {
         return (
-            <div className={s.LinksPanelCompoonent}>
+            <div className={s.linksPanelContainer}>
                 <p>LinksPanel Component.</p>
             </div>
         )

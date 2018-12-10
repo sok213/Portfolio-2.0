@@ -13,7 +13,7 @@ class ContactPanel extends Component {
 
     render() {
         return (
-            <div className={s.ContactPanelCompoonent}>
+            <div className={s.contactPanelContainer}>
                 <p>ContactPanel Component.</p>
             </div>
         )

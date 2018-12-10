@@ -9,7 +9,7 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			activePanel: 3,
+			activePanel: 4,
 			rendering: false,
             buttonActive: false,
 		}
@@ -34,30 +34,6 @@ class App extends Component {
 			this.setState({ [key]: value });
 		}, ms);
 	}
-
-	// nextSlide = () => {
-	// 	if(this.state.activePanel !== 4) {
-	// 		this.setState({
-	// 			activePanel: this.state.activePanel + 1,
-	// 			rendering: true
-	// 		});
-	// 	}
-
-	// 	this.delayStateChange(200, 'rendering', false);
-    //     this.delayStateChange(1000, 'buttonActive', false);
-	// }
-
-	// prevSlide = () => {
-	// 	if(this.state.activePanel !== 1) {
-	// 		this.setState({
-	// 			activePanel: this.state.activePanel - 1,
-	// 			rendering: true 
-	// 		});
-	// 	}
-
-	// 	this.delayStateChange(200, 'rendering', false);
-    //     this.delayStateChange(1000, 'buttonActive', false);
-	// }
 
 	render() {
 		return (

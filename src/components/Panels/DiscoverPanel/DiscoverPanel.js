@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import s from './DiscoverPanel.module.scss';
 import PropTypes from 'prop-types';
+import BlogPanel from './BlogPanel/BlogPanel';
+import ContactPanel from './ContactPanel/ContactPanel';
+import LinksPanel from './LinksPanel/LinksPanel';
 
 class DiscoverPanel extends Component {
     constructor(props) {
@@ -14,7 +17,9 @@ class DiscoverPanel extends Component {
     render() {
         return (
             <div className={s.discoverPanelCompoonent}>
-                <p>DiscoverPanel Component.</p>
+                <BlogPanel />
+                <ContactPanel />
+                <LinksPanel />
             </div>
         )
     }
