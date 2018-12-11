@@ -27,16 +27,18 @@ class ContactPanel extends Component {
                                         type="text" 
                                         name="name" 
                                         className={s.inputArea} 
+                                        placeholder="Enter your name."
                                     />
                                 </label>
                             </li>
                             <li>
                                 <label>
-                                    Email
+                                    E-mail
                                     <input 
                                         type="email" 
                                         name="reply_to" 
-                                        className={s.inputArea} 
+                                        className={s.inputArea}
+                                        placeholder="Enter your e-mail."
                                     />
                                 </label>
                             </li>
@@ -47,6 +49,7 @@ class ContactPanel extends Component {
                                         type="text" 
                                         name="message" 
                                         className={s.textArea} 
+                                        placeholder="Send me a nice message."
                                     />
                                 </label>
                             </li>
