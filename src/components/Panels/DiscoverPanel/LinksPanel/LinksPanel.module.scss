@@ -2,15 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 20px;
+    flex-direction: column;
 }
 
 .linksPanel {
-    border-top: thin solid white;
     text-align: center;
 }
 
 .socialMediaLinks {
     list-style-type: none;
     text-align: center;
+    display: flex;
     padding: 0px;
+
+    li {
+        margin-left: 10px;
+
+        a {
+            color: rgb(194, 194, 194) !important;
+        }
+    }
 }

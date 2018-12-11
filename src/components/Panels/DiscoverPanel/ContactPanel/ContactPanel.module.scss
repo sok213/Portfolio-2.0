@@ -62,6 +62,7 @@ form {
     }
 
     .sendBtn {
+        font-weight: bold;
         width: 210px;
         border-radius: 4px;
         margin-top: 10px;
@@ -70,6 +71,12 @@ form {
         font-size: 18px;
         transition: 0.2s;
         cursor: pointer;
+        color: white;
+        background-color: rgba(13, 115, 188, 1);
+        border-left: thin solid rgb(18, 93, 146);
+        border-bottom: thin solid rgb(19, 94, 148);
+        border-top: none;
+        border-right: none;
 
         &:hover {
             opacity: 0.8;
