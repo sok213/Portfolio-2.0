@@ -16,6 +16,7 @@ class LinksPanel extends Component {
             <div className={s.linksPanelContainer}>
                 <div className={s.linksPanel}>
                     <h4>Social Media</h4>
+                    <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
                         <li><a href="#">Link #1</a></li>
                         <li><a href="#">Link #1</a></li>

@@ -40,4 +40,8 @@
     li:hover {
         background-color: rgba(0, 0, 0, 0.45);
     }
+
+    li:nth-child(1) {
+        border-top: 3px solid orange;
+    }
 }
