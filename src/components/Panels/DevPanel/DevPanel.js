@@ -24,15 +24,7 @@ class DevPanel extends Component {
                     title: 'Item #3',
                     desc: 'This is a test description',
                     animation: 'fadeInRight'
-                },
-                // {
-                //     title: 'Item #4',
-                //     desc: 'This is a test description',
-                // },
-                // {
-                //     title: 'Item #5',
-                //     desc: 'This is a test description',
-                // }
+                }
             ]
         }
     }
