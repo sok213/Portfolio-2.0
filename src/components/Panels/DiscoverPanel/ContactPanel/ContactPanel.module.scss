@@ -53,6 +53,10 @@ form {
         font-weight: bold;
         color: rgba(75, 75, 75, 1);
         outline: none;
+
+        @media screen and (max-width: 450px) {
+            width: 300px;
+        }
     }
 
     .textArea {
