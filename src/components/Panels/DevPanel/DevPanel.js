@@ -13,7 +13,7 @@ class DevPanel extends Component {
                 {
                     title: 'Item #1',
                     desc: 'This is a test description',
-                    animation: 'fadeInUpBig'
+                    animation: 'fadeInLeft'
                 },
                 {
                     title: 'Item #2',

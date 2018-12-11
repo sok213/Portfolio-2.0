@@ -19,7 +19,7 @@
     border-right: 2px solid white;
 
     @media screen and (max-width: 999px) {
-        border-right: none;
+        display: none;
     }
 }
 

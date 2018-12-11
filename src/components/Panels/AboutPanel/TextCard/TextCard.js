@@ -16,7 +16,7 @@ class TextCard extends Component {
         super(props);
 
         this.state = {
-            activeSection: 2
+            activeSection: 1
         }
     }
 
