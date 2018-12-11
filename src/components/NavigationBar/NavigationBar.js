@@ -8,7 +8,7 @@ class NavigationBar extends Component {
 		super(props);
 
 		this.state = {
-			activePanel: ''
+			activePanel: 'hi'
 		}
 	}
 
