@@ -18,10 +18,11 @@ class LinksPanel extends Component {
                     <h4>Social Media</h4>
                     <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Medium</a></li>
+                        <li><a href="#">CodePen</a></li>
+                        <li><a href="#">FreeCodeCamp</a></li>
+                        <li><a href="#">YouTube</a></li>
                     </ul>
                 </div>
             </div>
