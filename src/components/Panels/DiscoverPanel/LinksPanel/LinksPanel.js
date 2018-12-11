@@ -28,7 +28,9 @@ class LinksPanel extends Component {
                     <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
                         <li>
-                            <a href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/" target="_blank">
+                            <a href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/" 
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </li>
@@ -53,7 +55,9 @@ class LinksPanel extends Component {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=lX64QPxtjBs" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=lX64QPxtjBs" 
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon icon={faYoutube} />
                             </a>
                         </li>
