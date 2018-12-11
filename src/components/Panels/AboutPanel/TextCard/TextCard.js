@@ -55,13 +55,13 @@ class TextCard extends Component {
         if(this.state.activeSection === 1) {
             return (
                 <button onClick={this.nextSlide} className={s.navButton}>
-                    <FontAwesomeIcon icon={faAngleRight} className={s.navIcon} />
+                    <span className={s.buttonText}>Next</span> <FontAwesomeIcon icon={faAngleRight} className={s.navIcon} />
                 </button>
             );
         } else if(this.state.activeSection === 2) {
             return (
                 <button onClick={this.prevSlide} className={s.navButton}>
-                    <FontAwesomeIcon icon={faAngleLeft} className={s.navIcon} />
+                    <FontAwesomeIcon icon={faAngleLeft} className={s.navIcon} /> <span className={s.buttonText}>Back</span>
                 </button>
             );
         }
