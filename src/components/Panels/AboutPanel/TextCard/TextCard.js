@@ -36,48 +36,50 @@ class TextCard extends Component {
                 <div className={s.textContent}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua: </p>
                     <div className={s.techIconsContainer}>
-                        <ul className={s.techIcons}>
-                            <li>
-                                <a 
-                                    className={`${s.icon} ${s.javascriptLogo}`}
-                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon icon={faJsSquare} className={s.javascriptLogo} />
-                                    <span className={s.subText}>JavaScript</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    className={`${s.icon} ${s.reactLogo}`}
-                                    href="https://reactjs.org/"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon icon={faReact}/>
-                                    <span className={s.subText}>React</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    className={`${s.icon} ${s.htmlLogo}`}
-                                    href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon icon={faHtml5}/>
-                                    <span className={s.subText}>HTML 5</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    className={`${s.icon} ${s.cssLogo}`}
-                                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                                    target="_blank"
-                                >
-                                    <FontAwesomeIcon icon={faCss3Alt}/>
-                                    <span className={s.subText}>CSS 3</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <Animated animationIn="fadeInLeft" isVisible={true}>
+                            <ul className={s.techIcons}>
+                                <li>
+                                    <a 
+                                        className={`${s.icon} ${s.javascriptLogo}`}
+                                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                        target="_blank"
+                                    >
+                                        <FontAwesomeIcon icon={faJsSquare} className={s.javascriptLogo} />
+                                        <span className={s.subText}>JavaScript</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        className={`${s.icon} ${s.reactLogo}`}
+                                        href="https://reactjs.org/"
+                                        target="_blank"
+                                    >
+                                        <FontAwesomeIcon icon={faReact}/>
+                                        <span className={s.subText}>React</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        className={`${s.icon} ${s.htmlLogo}`}
+                                        href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                                        target="_blank"
+                                    >
+                                        <FontAwesomeIcon icon={faHtml5}/>
+                                        <span className={s.subText}>HTML 5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a 
+                                        className={`${s.icon} ${s.cssLogo}`}
+                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                                        target="_blank"
+                                    >
+                                        <FontAwesomeIcon icon={faCss3Alt}/>
+                                        <span className={s.subText}>CSS 3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </Animated>
                     </div>
                     <div className={s.buttonContainer}>
                         {this.renderButton()}
