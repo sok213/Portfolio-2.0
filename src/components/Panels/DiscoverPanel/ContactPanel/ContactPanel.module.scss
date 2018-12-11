@@ -53,6 +53,8 @@ form {
         font-weight: bold;
         color: rgba(75, 75, 75, 1);
         outline: none;
+        border-left: 2px solid rgb(80, 79, 79);
+        border-bottom: 1px solid rgb(92, 92, 92);
 
         @media screen and (max-width: 450px) {
             width: 300px;

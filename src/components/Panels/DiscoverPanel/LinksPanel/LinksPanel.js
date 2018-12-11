@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import s from './LinksPanel.module.scss';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faFreeCodeCamp, faCodepen, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 class LinksPanel extends Component {
     constructor(props) {
@@ -18,11 +20,21 @@ class LinksPanel extends Component {
                     <h4>Social Media</h4>
                     <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Medium</a></li>
-                        <li><a href="#">CodePen</a></li>
-                        <li><a href="#">FreeCodeCamp</a></li>
-                        <li><a href="#">YouTube</a></li>
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        </li>
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faMedium} /></a>
+                        </li>
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faCodepen} /></a>
+                        </li>
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faFreeCodeCamp} /></a>
+                        </li>
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
+                        </li>
                     </ul>
                 </div>
             </div>

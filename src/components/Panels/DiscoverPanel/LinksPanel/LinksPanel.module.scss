@@ -7,6 +7,7 @@
     align-items: center;
     padding: 0px 20px;
     flex-direction: column;
+    margin-top: -40px;
 }
 
 .linksPanel {
@@ -20,10 +21,16 @@
     padding: 0px;
 
     li {
-        margin-left: 10px;
+        margin-left: 28px;
+        font-size: 30px;
 
         a {
-            color: rgb(194, 194, 194) !important;
+            transition: 0.3s;
+            color: rgb(211, 211, 211);
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
