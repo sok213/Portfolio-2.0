@@ -8,6 +8,10 @@
     padding: 0px 20px;
     flex-direction: column;
     margin-top: -40px;
+
+    @media screen and (min-height: 740px) {
+        margin-top: 0px;
+    }
 }
 
 .linksPanel {
@@ -22,7 +26,7 @@
 
     li {
         margin-left: 28px;
-        font-size: 30px;
+        font-size: 28px;
 
         a {
             transition: 0.3s;
