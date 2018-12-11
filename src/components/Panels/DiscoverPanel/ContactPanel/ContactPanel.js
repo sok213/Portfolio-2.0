@@ -19,27 +19,45 @@ class ContactPanel extends Component {
                         action="https://formspree.io/sokcodes@gmail.com" 
                         method="POST"
                     >
-                        <ul className='flex-outer'>
+                        <ul className={s.flexOuter}>
                             <li>
                                 <label>
-                                    Name:
-                                    <input type="text" name="name" />
+                                    Name
+                                    <input 
+                                        type="text" 
+                                        name="name" 
+                                        className={s.inputArea} 
+                                    />
                                 </label>
                             </li>
                             <li>
                                 <label>
-                                    Email:
-                                    <input type="email" name="reply_to" />
+                                    Email
+                                    <input 
+                                        type="email" 
+                                        name="reply_to" 
+                                        className={s.inputArea} 
+                                    />
                                 </label>
                             </li>
                             <li>
                                 <label>
-                                    Message:
-                                    <textarea type="text" name="message" />
+                                    Message
+                                    <textarea 
+                                        type="text" 
+                                        name="message" 
+                                        className={s.textArea} 
+                                    />
                                 </label>
                             </li>
                             <li>
-                                <input type="submit" value="Send" />
+                                <button 
+                                    type="submit" 
+                                    value="Send" 
+                                    className={s.sendBtn}
+                                >
+                                    Send
+                                </button>
                             </li>
                         </ul>
                     </form>

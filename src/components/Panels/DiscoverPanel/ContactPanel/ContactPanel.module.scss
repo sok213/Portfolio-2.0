@@ -1,5 +1,7 @@
+@import '../../../styles/typography.scss';
+@import '../../../styles/common.scss';
+
 .contactPanelContainer {
-    border: thin solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +9,61 @@
 }
 
 .contactPanel {
-    border: thin solid yellow;
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.flexOuter {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+
+    li {
+        display: flex;
+        flex-grow: 1;
+        padding: 10px;
+        padding-bottom: 2px;
+    }
+
+    label {
+        font-size: 18px;
+        color: white;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .inputArea {
+        width: 350px;
+        justify-content: flex-start;
+        height: 35px;
+        border: none;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 0px 20px;
+        font-size: 15px;
+    }
+
+    .textArea {
+        @extend .inputArea;
+        height: 80px;
+        padding: 15px 20px;
+    }
+
+    .sendBtn {
+        width: 210px;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        font-size: 18px;
+    }
 }

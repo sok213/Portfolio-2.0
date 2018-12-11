@@ -10,11 +10,12 @@
 }
 
 .leftPanel {
-    flex-grow: 21;
-    padding: 10px 20px;
+    flex-grow: 1;
+    padding: 0px 20px;
     border-right: thin solid white;
 }
 
 .rightPanel {
-    padding: 10px 20px;
+    flex-grow: 1;
+    padding: 0px 20px;
 }
