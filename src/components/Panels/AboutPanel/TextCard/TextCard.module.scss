@@ -32,10 +32,8 @@
 
     .navButton {
         background-color: rgba(0, 0, 0, 0.8);
+        border: thin solid black;
         color: white;
-        border: thin solid rgb(155, 150, 150);
-        border-left: thin solid rgb(218, 218, 218);
-        border-bottom: thin solid white;
         padding: 8px 0px;
         outline: none;
         transition: 0.3s;
