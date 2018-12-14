@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.35);
     padding-left: 15px;
     border-radius: 3px;
-    
+
     h4 {
         margin-bottom: -10px;
     }
@@ -52,13 +52,17 @@
 
 .feedMirrorContainer {
     overflow-y: scroll;
-    max-height: 460px;
+    max-height: 600px;
     padding-right: 15px;
     max-width: 1000px;
 
     div:nth-last-child(1) {
         padding-bottom: 15px;
     }
+
+    @media screen and (max-height: 700px) {
+        max-height: 450px;
+    } 
 }
 
 .feedMirrorContainer::-webkit-scrollbar {
