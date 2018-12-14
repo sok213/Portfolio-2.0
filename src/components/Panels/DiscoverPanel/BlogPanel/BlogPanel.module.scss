@@ -2,29 +2,27 @@
 @import '../../../styles/common.scss';
 
 .blogPanelContainer {
-    @extend .subtleShadow;
+    @extend .subtleShadowInset;
     @extend .fadeIn;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.35);
     padding-left: 15px;
     border-radius: 3px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
 
     p {
-        color: black;
+        color: rgb(212, 212, 212);
     }
 
     a {
-        color: rgb(194, 90, 48);
+        color: rgb(206, 189, 40);
         text-decoration: none;
         font-size: 20px;
     }
 
     img {
-        border: thin solid rgb(95, 94, 94);
+        @extend .subtleShadow;
         margin-top: 10px;
         border-radius: 3px;
     }
