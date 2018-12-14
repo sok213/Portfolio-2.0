@@ -26,7 +26,7 @@ class DiscoverPanel extends Component {
                                 icon={faMedium} 
                                 className={s.mediumLogo} 
                             />
-                                edium Publications
+                                edium Publication
                         </h1>
                         <div className={s.underline}></div>
                     </div>
