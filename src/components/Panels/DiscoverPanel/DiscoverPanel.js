@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import BlogPanel from './BlogPanel/BlogPanel';
 import ContactPanel from './ContactPanel/ContactPanel';
 import LinksPanel from './LinksPanel/LinksPanel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMedium } from '@fortawesome/free-brands-svg-icons';
 
 class DiscoverPanel extends Component {
     constructor(props) {
@@ -19,7 +21,7 @@ class DiscoverPanel extends Component {
             <div className={s.discoverPanelComponent}>
                 <div className={s.leftPanel}>
                     <div className={s.blogHeader}>
-                        <h1>Medium Publications</h1>
+                        <h1><FontAwesomeIcon icon={faMedium} className={s.mediumLogo} />edium Publications</h1>
                         <div className={s.underline}></div>
                     </div>
                     <BlogPanel />
