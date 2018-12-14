@@ -53,7 +53,7 @@ class TextCard extends Component {
                 <div className={s.textContent} key={3}>
                     <Animated animationIn="fadeIn" isVisible={true}>
                         <div>
-                            <p>Front-End development resonates with me because It is a combination of both art/design and problem solving. It is a skill that consists of artistic creativity, which is something that I am naturally good at, and problem solving which was once my weakness that I now consider to be a strength.</p>
+                            <p>Front-End development resonates with me because it is a combination of both art/design and problem solving. It is a skill that consists of artistic creativity, which is something that I am naturally good at, and problem solving which was once my weakness that I now consider to be a strength.</p>
                         </div>
                     </Animated>
                     <div className={s.buttonContainer}>
