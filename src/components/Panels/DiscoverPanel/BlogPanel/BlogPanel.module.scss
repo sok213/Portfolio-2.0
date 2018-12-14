@@ -1,6 +1,51 @@
+@import '../../../styles/typography.scss';
+@import '../../../styles/common.scss';
+
 .blogPanelContainer {
-    // border: thin solid red;
+    @extend .subtleShadow;
+    @extend .fadeIn;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 15px;
+    border-radius: 3px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    p {
+        color: black;
+    }
+
+    a {
+        color: rgb(194, 90, 48);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    img {
+        border: thin solid rgb(95, 94, 94);
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+}
+
+.feedMirrorContainer {
+    overflow-y: scroll;
+    max-height: 460px;
+    padding-right: 15px;
+    max-width: 1000px;
+}
+
+.feedMirrorContainer::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.feedMirrorContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.feedMirrorContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

@@ -18,6 +18,7 @@ class DiscoverPanel extends Component {
         return (
             <div className={s.discoverPanelComponent}>
                 <div className={s.leftPanel}>
+                    <h1>Medium Publications</h1>
                     <BlogPanel />
                 </div>
                 <div className={s.rightPanel}>

@@ -18,8 +18,11 @@ class BlogPanel extends Component {
     render() {
         return (
             <div className={s.blogPanelContainer}>
-                <p>Medium posts should render here.</p>
-                <div id="fm-medium-embed"></div>
+                <div 
+                    id="fm-medium-embed" 
+                    className={s.feedMirrorContainer}
+                >
+                </div>
             </div>
         )
     }

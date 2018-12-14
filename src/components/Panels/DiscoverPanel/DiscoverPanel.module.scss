@@ -7,6 +7,9 @@
     flex-direction: row;
     flex: 1 0 auto;
     align-items: center;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (max-width: 999px) {
         flex-direction: column;
@@ -16,7 +19,6 @@
 .leftPanel {
     flex-grow: 1;
     padding: 0px 20px;
-    border-right: 2px solid white;
 
     @media screen and (max-width: 999px) {
         display: none;
