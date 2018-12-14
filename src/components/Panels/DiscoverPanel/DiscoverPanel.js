@@ -21,7 +21,13 @@ class DiscoverPanel extends Component {
             <div className={s.discoverPanelComponent}>
                 <div className={s.leftPanel}>
                     <div className={s.blogHeader}>
-                        <h1><FontAwesomeIcon icon={faMedium} className={s.mediumLogo} />edium Publications</h1>
+                        <h1>
+                            <FontAwesomeIcon 
+                                icon={faMedium} 
+                                className={s.mediumLogo} 
+                            />
+                                edium Publications
+                        </h1>
                         <div className={s.underline}></div>
                     </div>
                     <BlogPanel />
