@@ -44,15 +44,10 @@
 
     .blogHeader {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     @media screen and (max-width: 999px) {
         padding: 0px;
-
-        .blogHeader {
-            margin-bottom: -15px;
-            font-size: 14px;
-        }
     }
 }

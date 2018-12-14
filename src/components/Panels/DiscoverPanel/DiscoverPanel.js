@@ -34,7 +34,7 @@ class DiscoverPanel extends Component {
                 </div>
                 <div className={s.rightPanel}>
                     <div className={s.blogHeader}>
-                        <h1>Contact</h1>
+                        <h3>Contact</h3>
                         <div className={s.underline}></div>
                     </div>
                     <ContactPanel />
