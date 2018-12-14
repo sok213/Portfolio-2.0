@@ -169,3 +169,17 @@
         top: -4px;
     }
 }
+
+.horizontalButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+    .horizontalButtons {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

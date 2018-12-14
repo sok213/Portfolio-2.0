@@ -22,7 +22,8 @@ class WelcomePanel extends Component {
                     </div>
 
                     <div className={s.introduction}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>"I fear not the man who has practiced 10,000 programming languages once, but I fear the man who has practiced JavaScript 10,000 times."</p>
+                        <p className={s.bruceLee}>- Bruce Lee</p>
                     </div>
                 </div>
             </div>
