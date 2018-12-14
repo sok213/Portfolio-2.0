@@ -9,7 +9,6 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,7 +27,7 @@
     </noscript>
     <div id="root"></div>
     <!--
-      This HTML file is a template.
+      This HTML file is a template. 
       If you open it directly in the browser, you will see an empty page.
 
       You can add webfonts, meta tags, or analytics to this file.
@@ -37,5 +36,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      function feedMirror() {
+        feedmirror.initialize({
+          feedURL: 'https://data.feedmirror.com/-LTcpgayPWlkXPdyRYT-.json',
+          integration: 'medium-embed',
+          linkOutText: 'Read more',
+          linkToMediumProfileText: 'Subscribe on Medium',
+          postsCount: 3,
+          element: 'fm-medium-embed'
+        });
+      }
+    </script>
+    <script src="http://data.feedmirror.com/embed.js"></script>
   </body>
 </html>
