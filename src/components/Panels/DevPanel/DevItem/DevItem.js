@@ -20,9 +20,9 @@ class DevItem extends Component {
             `}>
                 <div className={s.overlayTextContainer}>
                     <div className={s.overlayText}>
-                        <h4>Title</h4>
+                        <h4>{this.props.title}</h4>
                         <div className={s.underline}></div>
-                        <p>Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye.</p>
+                        <p>{this.props.description}</p>
                     </div>
                 </div>
             </div>

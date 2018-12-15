@@ -11,8 +11,8 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'Item #1',
-                    desc: 'This is a test description',
+                    title: 'Fit Advisor',
+                    desc: 'A very simple and easy tool for people to find out how to achieve their fitness goals based on their body types.',
                     animation: 'fadeInLeft'
                 },
                 {
@@ -39,7 +39,10 @@ class DevPanel extends Component {
                             isVisible={true} 
                             className={s.devItem}
                         >
-                            <DevItem className={item.type} />
+                            <DevItem 
+                                className={item.type} 
+                                description={item.desc} 
+                                title={item.title} />
                         </Animated>
                     )
                 })}
