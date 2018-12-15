@@ -22,7 +22,7 @@ class DevItem extends Component {
                     <div className={s.overlayText}>
                         <h2>{this.props.title}</h2>
                         <div className={s.underline}></div>
-                        <p>{this.props.description}</p>
+                        {this.props.description}
                     </div>
                 </div>
             </div>

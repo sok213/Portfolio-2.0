@@ -11,18 +11,18 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'Fit Advisor',
-                    desc: 'A very simple and easy tool for people to find out how to achieve their fitness goals based on their body types.',
+                    title: 'Questhetics',
+                    desc: <p>A very simple and easy tool to assist people to suceed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
                     animation: 'fadeInLeft'
                 },
                 {
                     title: 'Item #2',
-                    desc: 'This is a test description',
+                    desc: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>,
                     animation: 'fadeInDown'
                 },
                 {
                     title: 'Item #3',
-                    desc: 'This is a test description',
+                    desc: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>,
                     animation: 'fadeInRight'
                 }
             ]
