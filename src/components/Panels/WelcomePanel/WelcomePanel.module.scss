@@ -8,18 +8,29 @@
     align-items: center;
     flex: 1 0 auto;
     padding: var( — space) var( — space) 0;
+
+    background-image: url( '../../../assets/wallofbooks_grainy.jpeg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 666px) {
+        background-image: url( '../../../assets/wallofbooks_mobile.jpeg');
+        background-position: right; 
+    }
 }
 
 .overlay {
     @extend .subtleShadow;
+    border: thin solid rgb(153, 152, 152);
     border-radius: 4px;
     width: 100%;
     max-width: 500px;
     margin: 10px;
     padding: 10px 25px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-left: 2px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.85);
+    // border-left: 2px solid rgba(0, 0, 0, 0.1);
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .header {

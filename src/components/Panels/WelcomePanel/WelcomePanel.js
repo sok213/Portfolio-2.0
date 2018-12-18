@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from './WelcomePanel.module.scss';
 import PropTypes from 'prop-types';
+import wallofbooks from '../../../assets/wallofbooks_vibrant.jpeg';
 
 class WelcomePanel extends Component {
     constructor(props) {
