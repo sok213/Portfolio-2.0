@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './BlogPanel.module.scss';
-import PropTypes from 'prop-types';
 
 class BlogPanel extends Component {
     constructor(props) {

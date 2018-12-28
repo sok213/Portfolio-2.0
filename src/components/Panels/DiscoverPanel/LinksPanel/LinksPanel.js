@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './LinksPanel.module.scss';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { 
@@ -28,14 +27,20 @@ class LinksPanel extends Component {
                     <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
                         <li>
-                            <a href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/" 
+                            <a 
+                                href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/" 
                                 target="_blank"
+                                rel="noopener noreferrer" 
                             >
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://medium.com/@sok213" target="_blank">
+                            <a 
+                                rel="noopener noreferrer" 
+                                href="https://medium.com/@sok213" 
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon icon={faMedium} />
                             </a>
                         </li>
@@ -45,18 +50,28 @@ class LinksPanel extends Component {
                             </a>
                         </li>
                         <li>
-                            <a href="https://codepen.io/sok213/" target="_blank">
+                            <a 
+                                href="https://codepen.io/sok213/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
                                 <FontAwesomeIcon icon={faCodepen} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/sok213" target="_blank">
+                            <a 
+                                href="https://github.com/sok213" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=lX64QPxtjBs" 
+                            <a 
+                                href="https://www.youtube.com/watch?v=lX64QPxtjBs" 
                                 target="_blank"
+                                rel="noopener noreferrer" 
                             >
                                 <FontAwesomeIcon icon={faYoutube} />
                             </a>

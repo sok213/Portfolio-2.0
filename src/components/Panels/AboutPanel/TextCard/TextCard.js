@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './TextCard.module.scss';
-import PropTypes from 'prop-types';
 import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -77,6 +76,7 @@ class TextCard extends Component {
                                         className={`${s.icon} ${s.javascriptLogo}`}
                                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <FontAwesomeIcon icon={faJsSquare} className={s.javascriptLogo} />
                                         <span className={s.subText}>JavaScript</span>
@@ -87,6 +87,7 @@ class TextCard extends Component {
                                         className={`${s.icon} ${s.reactLogo}`}
                                         href="https://reactjs.org/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <FontAwesomeIcon icon={faReact}/>
                                         <span className={s.subText}>React</span>
@@ -97,6 +98,7 @@ class TextCard extends Component {
                                         className={`${s.icon} ${s.htmlLogo}`}
                                         href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <FontAwesomeIcon icon={faHtml5}/>
                                         <span className={s.subText}>HTML 5</span>
@@ -107,6 +109,7 @@ class TextCard extends Component {
                                         className={`${s.icon} ${s.cssLogo}`}
                                         href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <FontAwesomeIcon icon={faCss3Alt}/>
                                         <span className={s.subText}>CSS 3</span>

@@ -45,6 +45,12 @@
     .blogHeader {
         text-align: center;
         margin-bottom: 0px;
+
+        h3, .underline {
+            @media screen and (max-height: 670px) {
+                display: none;
+            }
+        }
     }
 
     @media screen and (max-width: 999px) {

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import s from './DevItem.module.scss';
-import PropTypes from 'prop-types';
-import { Animated } from 'react-animated-css';
 
 class DevItem extends Component {
     constructor(props) {

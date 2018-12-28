@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './ImageCard.module.scss';
-import PropTypes from 'prop-types';
 import { Animated } from 'react-animated-css';
 import cafeImage from "../../../../assets/cafe.jpeg";
 
@@ -23,7 +22,11 @@ class ImageCard extends Component {
                         className={s.imageCardItem}
                     >
                         <div className={s.imgContainer}>
-                            <img src={cafeImage} className={s.imageCardItem} />
+                            <img 
+                                src={cafeImage} 
+                                className={s.imageCardItem} 
+                                alt="Me at a cafe with my laptop" 
+                            />
                         </div>
                     </Animated>
                 </div>

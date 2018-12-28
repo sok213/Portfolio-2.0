@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './DevPanel.module.scss';
-import PropTypes from 'prop-types';
 import { Animated } from 'react-animated-css';
 import DevItem from './DevItem/DevItem.js';
 
@@ -32,12 +31,13 @@ class DevPanel extends Component {
     render() {
         return (
             <div className={s.devPanelContainer}>
-                {this.state.devItems.map((item) => {
+                {this.state.devItems.map((item, i) => {
                     return (
                         <Animated 
                             animationIn={item.animation} 
                             isVisible={true} 
                             className={s.devItem}
+                            key={i}
                         >
                             <DevItem 
                                 className={item.type} 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './AboutPanel.module.scss';
-import PropTypes from 'prop-types';
 import TextCard from './TextCard/TextCard';
 import ImageCard from './ImageCard/ImageCard';
 

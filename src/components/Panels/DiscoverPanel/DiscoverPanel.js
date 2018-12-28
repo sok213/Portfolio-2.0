@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import s from './DiscoverPanel.module.scss';
-import PropTypes from 'prop-types';
 import BlogPanel from './BlogPanel/BlogPanel';
 import ContactPanel from './ContactPanel/ContactPanel';
 import LinksPanel from './LinksPanel/LinksPanel';
