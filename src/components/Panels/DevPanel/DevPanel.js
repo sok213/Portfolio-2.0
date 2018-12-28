@@ -20,8 +20,8 @@ class DevPanel extends Component {
                     animation: 'fadeInDown'
                 },
                 {
-                    title: 'Item #3',
-                    desc: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>,
+                    title: 'PSD to HTML & CSS',
+                    desc: <p>A beautiful responsive web page developed with bootstrap 3 which demonstrates the importance of knowing how to convert a mockup design into an interactive web page using HTML and CSS.</p>,
                     animation: 'fadeInRight'
                 }
             ]
