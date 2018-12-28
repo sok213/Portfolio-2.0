@@ -11,7 +11,7 @@ class DevPanel extends Component {
             devItems: [
                 {
                     title: 'Questhetics',
-                    desc: <p>A very simple and easy tool to assist people to suceed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
+                    desc: <p>A website built with React to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
                     animation: 'fadeInLeft'
                 },
                 {
