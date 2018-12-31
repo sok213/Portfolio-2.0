@@ -12,17 +12,23 @@ class DevPanel extends Component {
                 {
                     title: 'Questhetics',
                     desc: <p>A website built with React to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
-                    animation: 'fadeInLeft'
+                    animation: 'fadeInLeft',
+                    thumbnail: 1,
+                    url: '#'
                 },
                 {
                     title: 'Item #2',
                     desc: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>,
-                    animation: 'fadeInDown'
+                    animation: 'fadeInDown',
+                    thumbnail: 2,
+                    url: '#'
                 },
                 {
                     title: 'PSD to HTML & CSS',
                     desc: <p>A beautiful responsive web page developed with bootstrap 3 which demonstrates the importance of knowing how to convert a mockup design into an interactive web page using HTML and CSS.</p>,
-                    animation: 'fadeInRight'
+                    animation: 'fadeInRight',
+                    thumbnail: 3,
+                    url: 'https://sok213.github.io/psd-to-html/'
                 }
             ]
         }
@@ -36,11 +42,12 @@ class DevPanel extends Component {
                         <Animated 
                             animationIn={item.animation} 
                             isVisible={true} 
-                            className={s.devItem}
+                            className={s.devItemContainer}
                             key={i}
                         >
                             <DevItem 
-                                className={item.type} 
+                                url={item.url}
+                                thumbnail={item.thumbnail}
                                 description={item.desc} 
                                 title={item.title} />
                         </Animated>

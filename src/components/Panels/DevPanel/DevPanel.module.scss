@@ -14,12 +14,13 @@
     }
 }
 
-.devItem {
+.devItemContainer {
     display: flex;
     flex: 1 0 auto;
+    padding: 0px;
 }
 
-.devItem:nth-child(1) {
+.devItemContainer:nth-child(1) {
     @media only screen and (max-width : 999px) {
         order: 3;
     }

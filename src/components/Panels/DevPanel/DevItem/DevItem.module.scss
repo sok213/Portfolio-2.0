@@ -5,6 +5,8 @@
     @extend .subtleShadow;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     border-radius: 3px;
     flex-grow: 1;
     flex: 1 0 auto;
@@ -16,21 +18,24 @@
     }
 }
 
-.devItemContainer:hover {
-
-    .overlayTextContainer {
-        opacity: 0.8;
-    }
+.hrefContainer {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    height: 100% !important;
 }
 
 .overlayTextContainer {
     border-radius: 3px;
-    opacity: 0;
     display: flex;
-    background-color: #3f384d;
+    background-color: rgba(63, 56, 77, 0.78);
     flex: 1 0 auto;
     transition: 0.4s;
     align-items: center;
+
+    &:hover {
+        background-color: rgba(63, 56, 77, 0.65);
+    }
 
     .overlayText {
         display: flex;
