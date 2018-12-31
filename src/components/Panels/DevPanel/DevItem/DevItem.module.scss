@@ -35,6 +35,10 @@
 
     &:hover {
         background-color: rgba(63, 56, 77, 0.65);
+        .viewCta {
+            border-color: rgb(198, 235, 181);
+            color: rgb(198, 235, 181);;
+        }
     }
 
     .overlayText {
@@ -82,4 +86,19 @@
 
 .underline {
     background-color: rgb(51, 126, 196);
+}
+
+.viewCta {
+    cursor: pointer;
+    pointer-events: hover;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+    border: thin solid rgb(255, 212, 156);
+    color: rgb(255, 212, 156);;
+    margin-top: 20px;
+    border-radius: 2px;
+    height: 50px;
+    width: 130px;
+    font-size: 14px;
+    transition: 0.3s;
 }

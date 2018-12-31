@@ -43,6 +43,7 @@ class DevItem extends Component {
                             <h2>{this.props.title}</h2>
                             <div className={s.underline}></div>
                             {this.props.description}
+                            <button className={s.viewCta}>View Project</button>
                         </div>
                     </div>
                 </a>
