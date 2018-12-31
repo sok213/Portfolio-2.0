@@ -23,7 +23,7 @@ class TextCard extends Component {
         if(this.state.activeSection === 1) {
             return (
                 <div className={s.textContent} key={1}>
-                    <Animated animationIn="fadeIn" isVisible={true}>
+                    <Animated animationIn="slideInLeft" isVisible={true}>
                         <div>
                             <h1>My Story.</h1>
                             <p>I wrote my first line of code in 2011. I wasn’t sure whether I wanted to make indie games, mobile apps, program robots, or build websites. What I knew for sure was that I wanted to spend my time programming and building virtual experiences. After delving into web development, I realized that I had a passion for UI/UX and front-end web development.</p>
@@ -174,9 +174,7 @@ class TextCard extends Component {
     render() {
         return (
             <div className={s.textCardContainer}>
-                <Animated animationIn="slideInLeft" isVisible={true}>
-                    {this.renderSection()}
-                </Animated>
+                {this.renderSection()}
             </div>
         );
     }
