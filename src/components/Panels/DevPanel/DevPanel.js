@@ -17,8 +17,8 @@ class DevPanel extends Component {
                     url: '#'
                 },
                 {
-                    title: 'Item #2',
-                    desc: <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>,
+                    title: 'Stumpfry',
+                    desc: <p>A very simple tool built with React used to generate productive activities.</p>,
                     animation: 'fadeInDown',
                     thumbnail: 2,
                     url: '#'
