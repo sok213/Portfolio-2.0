@@ -21,7 +21,7 @@ class WelcomePanel extends Component {
                     </div>
 
                     <div className={s.introduction}>
-                        <p>"I fear not the man who has practiced 10,000 programming languages once, but I fear the man who has practiced JavaScript 10,000 times."</p>
+                        <p>"If you spend too much time thinking about a thing, you'll never get it done."</p>
                         <p className={s.bruceLee}>- Bruce Lee</p>
                     </div>
                 </div>
