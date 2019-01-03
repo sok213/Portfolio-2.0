@@ -10,7 +10,7 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'Questhetical',
+                    title: 'Questhetics',
                     desc: <p>A website built with React to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
