@@ -36,9 +36,17 @@ class Panels extends Component {
         }
     }
 
+    isDev = () => {
+        if(this.props.activePanel === 2) {
+            return 'center';
+        }
+
+        return null;
+    }
+
     render() {
         return (
-            <div className={s.panelsContainer}>
+            <div className={s.panelsContainer} style={{ alignItems: this.isDev() }}>
                 {this.props.rendering ? null : this.renderPanel()}
             </div>
         )
