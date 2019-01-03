@@ -21,7 +21,7 @@ class DevPanel extends Component {
                     desc: <p>A very simple tool built with React used to generate productive activities.</p>,
                     animation: 'fadeInDown',
                     thumbnail: 2,
-                    url: '#'
+                    url: 'https://stumpfry.herokuapp.com/'
                 },
                 {
                     title: 'PSD to HTML & CSS',
