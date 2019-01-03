@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from './DevItem.module.scss';
 import thumbnail1 from './../../../../assets/thumbnail1.jpg';
-// import thumbnail2 from './../../../../assets/thumbnail2.jpg';
+import thumbnail2 from './../../../../assets/thumbnail2.jpg';
 import thumbnail3 from './../../../../assets/thumbnail3.jpg';
 
 class DevItem extends Component {
@@ -17,7 +17,7 @@ class DevItem extends Component {
         if(this.props.thumbnail === 1) {
             return thumbnail1;
         } else if (this.props.thumbnail === 2) {
-            // return thumbnail2;
+            return thumbnail2;
         } else if (this.props.thumbnail === 3) {
             return thumbnail3;
         }
