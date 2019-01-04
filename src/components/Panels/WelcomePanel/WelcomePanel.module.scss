@@ -9,7 +9,7 @@
     flex: 1 0 auto;
     padding: var( — space) var( — space) 0;
 
-    background-image: url( '../../../assets/wallofbooks_grainy.jpeg');
+    background-image: url( '../../../assets/beachdawn.jpg');
     background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,15 +22,16 @@
 
 .overlay {
     @extend .subtleShadow;
-    border: thin solid rgb(153, 152, 152);
     border-radius: 4px;
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     margin: 10px;
     padding: 10px 25px;
-    background-color: rgba(0, 0, 0, 0.85);
-    // border-left: 2px solid rgba(0, 0, 0, 0.1);
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    @media screen and (max-width: 666px) {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
 
 .header {
