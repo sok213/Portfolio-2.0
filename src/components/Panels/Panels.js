@@ -24,7 +24,9 @@ class Panels extends Component {
     }
 
     renderPanel = () => {
-        const activePanel = this.props.activePanel;
+
+        const { activePanel } = this.props;
+
         if(activePanel === 1) {
             return <WelcomePanel />;
         } else if (activePanel === 2) {
@@ -37,7 +39,9 @@ class Panels extends Component {
     }
 
     isDev = () => {
-        if(this.props.activePanel === 2) {
+        const { activePanel } = this.props;
+
+        if(activePanel === 2) {
             return 'center';
         }
 
@@ -45,9 +49,12 @@ class Panels extends Component {
     }
 
     render() {
+
+        const { rendering } = this.props;
+
         return (
             <div className={s.panelsContainer} style={{ alignItems: this.isDev() }}>
-                {this.props.rendering ? null : this.renderPanel()}
+                {rendering ? null : this.renderPanel()}
             </div>
         )
     }

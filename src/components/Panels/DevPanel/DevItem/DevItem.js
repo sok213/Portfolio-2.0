@@ -14,35 +14,45 @@ class DevItem extends Component {
     }
     
     genImage() {
-        if(this.props.thumbnail === 1) {
+        const { thumbnail } = this.props;
+
+        if(thumbnail === 1) {
             return thumbnail1;
-        } else if (this.props.thumbnail === 2) {
+        } else if (thumbnail === 2) {
             return thumbnail2;
-        } else if (this.props.thumbnail === 3) {
+        } else if (thumbnail === 3) {
             return thumbnail3;
         }
     }
 
     render() {
+
+        const {
+            className,
+            url,
+            title,
+            description
+        } = this.props;
+
         return (
             <div 
                 className={`
                     ${s.devItemContainer}
-                    ${s[this.props.className]}
+                    ${s[className]}
                 `}
                 style={{ background: `url(${this.genImage()})`}}
             >
                 <a 
-                    href={this.props.url}
+                    href={url}
                     rel="noopener noreferrer" 
                     target="_blank" 
                     className={s.hrefContainer}
                 >
                     <div className={s.overlayTextContainer}>
                         <div className={s.overlayText}>
-                            <h2>{this.props.title}</h2>
+                            <h2>{title}</h2>
                             <div className={s.underline}></div>
-                            {this.props.description}
+                            {description}
                             <button className={s.viewCta}>View Project</button>
                         </div>
                     </div>
