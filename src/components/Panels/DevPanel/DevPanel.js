@@ -17,11 +17,11 @@ class DevPanel extends Component {
                     url: 'http://questhetics.herokuapp.com/'
                 },
                 {
-                    title: 'Stumpfry',
-                    desc: <p>A very simple tool built with React used to generate productive activities.</p>,
+                    title: 'Some Digital Agency',
+                    desc: <p>A satrical webpage that represents many digital agency websites that are prevalent across the tech industy.</p>,
                     animation: 'fadeInDown',
                     thumbnail: 2,
-                    url: 'https://stumpfry.herokuapp.com/'
+                    url: 'https://www.somedigitalagency.com/'
                 },
                 {
                     title: 'PSD to HTML & CSS',
