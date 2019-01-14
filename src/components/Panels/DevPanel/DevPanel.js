@@ -18,7 +18,7 @@ class DevPanel extends Component {
                 },
                 {
                     title: 'Some Digital Agency',
-                    desc: <p>A satrical webpage that represents many digital agency websites that are prevalent across the tech industy.</p>,
+                    desc: <p>A satirical webpage that represents many digital agency websites that are prevalent across the tech industy.</p>,
                     animation: 'fadeInDown',
                     thumbnail: 2,
                     url: 'https://www.somedigitalagency.com/'
