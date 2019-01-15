@@ -11,14 +11,14 @@ class DevPanel extends Component {
             devItems: [
                 {
                     title: 'Questhetics',
-                    desc: <p>A website built with React to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type.</p>,
+                    desc: <p>A website used to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type. This project was built with React, Flexbox, and Sass</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
                     url: 'http://questhetics.herokuapp.com/'
                 },
                 {
                     title: 'Some Digital Agency',
-                    desc: <p>A satirical webpage that represents many digital agency websites that are prevalent across the tech industy.</p>,
+                    desc: <p>A satirical webpage that represents many digital agency websites that are prevalent across the tech industy. This project was built with React, Flexbox, and Sass.</p>,
                     animation: 'fadeInDown',
                     thumbnail: 2,
                     url: 'https://www.somedigitalagency.com/'
