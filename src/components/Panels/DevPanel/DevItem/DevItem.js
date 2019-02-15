@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from './DevItem.module.scss';
-import thumbnail1 from './../../../../assets/thumbnail1.jpg';
+import thumbnail1 from './../../../../assets/shipping.jpg';
 import thumbnail2 from './../../../../assets/thumbnail2.jpg';
 import thumbnail3 from './../../../../assets/thumbnail3.jpg';
 

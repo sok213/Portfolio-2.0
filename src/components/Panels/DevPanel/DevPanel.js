@@ -10,11 +10,11 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'Questhetics',
-                    desc: <p>A website used to assist people to succeed in their quest for achieving an <em>aesthetic</em> physique based on their body type. This project was built with React, Flexbox, and Sass</p>,
+                    title: 'Torres Packing',
+                    desc: <p>A landing page built for a small local shipping company that ships packages to Mexico.</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
-                    url: 'http://questhetics.herokuapp.com/'
+                    url: 'http://torrespacking.com/'
                 },
                 {
                     title: 'Some Digital Agency',
