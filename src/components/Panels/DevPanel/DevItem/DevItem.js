@@ -25,13 +25,18 @@ class DevItem extends Component {
         }
     }
 
+    openLink(link) {
+      window.open(link, '_target');
+    }
+
     render() {
 
         const {
             className,
             url,
             title,
-            description
+            description,
+            githubLink
         } = this.props;
 
         return (
@@ -42,21 +47,32 @@ class DevItem extends Component {
                 `}
                 style={{ background: `url(${this.genImage()})`}}
             >
-                <a 
+                {/* <a 
                     href={url}
                     rel="noopener noreferrer" 
                     target="_blank" 
                     className={s.hrefContainer}
-                >
+                > */}
                     <div className={s.overlayTextContainer}>
                         <div className={s.overlayText}>
                             <h2>{title}</h2>
                             <div className={s.underline}></div>
                             {description}
-                            <button className={s.viewCta}>View Project</button>
+                            <button 
+                              className={s.viewCta}
+                              onClick={this.openLink.bind(null, url)}
+                            >
+                              View Project
+                            </button>
+                            <button 
+                              className={s.viewCta}
+                              onClick={this.openLink.bind(null, githubLink)}
+                            >
+                              Source Code
+                            </button>
                         </div>
                     </div>
-                </a>
+                {/* </a> */}
             </div>
         )
     }
