@@ -18,19 +18,6 @@ class DiscoverPanel extends Component {
     render() {
         return (
             <div className={s.discoverPanelComponent}>
-                <div className={s.leftPanel}>
-                    <div className={s.blogHeader}>
-                        <h1>
-                            <FontAwesomeIcon 
-                                icon={faMedium} 
-                                className={s.mediumLogo} 
-                            />
-                                edium Publication
-                        </h1>
-                        <div className={s.underline}></div>
-                    </div>
-                    <BlogPanel />
-                </div>
                 <div className={s.rightPanel}>
                     <div className={s.blogHeader}>
                         <h3>Contact</h3>

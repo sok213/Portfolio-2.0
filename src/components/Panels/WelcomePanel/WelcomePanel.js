@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import s from './WelcomePanel.module.scss';
 
+// TODO: 
+// - Replace background image to something more personal.
+// Replace favicon.ico image.
+
 class WelcomePanel extends Component {
     constructor(props) {
         super(props);

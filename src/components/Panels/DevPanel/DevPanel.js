@@ -3,6 +3,12 @@ import s from './DevPanel.module.scss';
 import { Animated } from 'react-animated-css';
 import DevItem from './DevItem/DevItem.js';
 
+// TODO: 
+// - Remove torres packing
+// - Add npm package.
+// - Add my minimal dashboard.
+// - Add view source code link.
+
 class DevPanel extends Component {
     constructor(props) {
         super(props);
@@ -10,8 +16,8 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'Torres Packing',
-                    desc: <p>A landing page built for a small local shipping company that ships packages to Mexico.</p>,
+                    title: 'React Accordion NPM Package',
+                    desc: <p>A lightweight accordion component wrapped as an NPM package.</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
                     url: 'http://torrespacking.com/'
