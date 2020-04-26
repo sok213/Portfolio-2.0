@@ -33,7 +33,7 @@ class DevPanel extends Component {
                 },
                 {
                     title: 'MyMinimalDash',
-                    desc: <p>A beautiful responsive web page developed with bootstrap 3 which demonstrates the importance of knowing how to convert a mockup design into an interactive web page using HTML and CSS.</p>,
+                    desc: <p>A lightweight simple dashboard that provides news, weather, and a checklist module to help you keep your day organized and up to date with an aesthetically pleasing design.</p>,
                     animation: 'fadeInRight',
                     thumbnail: 3,
                     url: 'https://sok213.github.io/psd-to-html/',

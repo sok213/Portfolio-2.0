@@ -25,6 +25,11 @@
     height: 100% !important;
 }
 
+.viewCta:hover {
+  border-color: rgb(198, 235, 181);
+  color: rgb(198, 235, 181);;
+}
+
 .overlayTextContainer {
     border-radius: 3px;
     display: flex;
@@ -35,10 +40,6 @@
 
     &:hover {
         background-color: rgba(63, 56, 77, 0.65);
-        .viewCta {
-            border-color: rgb(198, 235, 181);
-            color: rgb(198, 235, 181);;
-        }
     }
 
     .overlayText {
