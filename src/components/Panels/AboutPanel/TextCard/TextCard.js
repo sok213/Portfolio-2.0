@@ -25,8 +25,8 @@ class TextCard extends Component {
                 <div className={s.textContent} key={1}>
                     <Animated animationIn="slideInLeft" isVisible={true}>
                         <div>
-                            <h1>My Story.</h1>
-                            <p>I wrote my first line of code in 2011. I wasn’t sure whether I wanted to make indie games, mobile apps, program robots, or build websites. What I knew for sure was that I wanted to spend my time programming and building virtual experiences. After delving into web development, I realized that I had a passion for UI/UX and front-end web development.</p>
+                            <h1>About me.</h1>
+                            <p>I started writing code in 2011, got my first developer job in 2017 and ever since then I’ve been hooked on building fast, pretty, and functional user interfaces with my favorite language – JavaScript! I am a self-taught developer which means that I learned how to program and build websites by reading the plethora of tutorials, documentation, watching videos on the internet, and having technical discussions within programming forums such as freeCodeCamp.org and reddit. Most of all, I learned a lot from my co-workers who past on their knowledge to me.</p>
                         </div>
                     </Animated>
                     <div className={s.buttonContainer}>
@@ -39,33 +39,7 @@ class TextCard extends Component {
                 <div className={s.textContent} key={2}>
                     <Animated animationIn="fadeIn" isVisible={true}>
                         <div>
-                            <p>As a kid I was very good at drawing and I had a passion for music. I struggled with math and I always had a hard time solving problems, especially when it required analytical and methodical thinking. I was considered someone who was <em>right brain</em> dominant which meant that I was naturally creative and had a talent for art, but not so much with numbers and problem solving. Programming proved to be a challenge and I wanted to get good at it because I was driven to conquer a weakness within myself.</p>
-                        </div>
-                    </Animated>
-                    <div className={s.buttonContainer}>
-                        {this.renderButton()}
-                    </div>
-                </div>
-            );
-        } else if (this.state.activeSection === 3) {
-            return (
-                <div className={s.textContent} key={3}>
-                    <Animated animationIn="fadeIn" isVisible={true}>
-                        <div>
-                            <p>Front-End development resonates with me because it is a combination of both art/design and problem solving. It is a skill that consists of artistic creativity, which is something that I am naturally good at, and problem solving which was once my weakness that I now consider to be a strength.</p>
-                        </div>
-                    </Animated>
-                    <div className={s.buttonContainer}>
-                        {this.renderButton()}
-                    </div>
-                </div>
-            );
-        } else if (this.state.activeSection === 4) {
-            return (
-                <div className={s.textContent} key={4}>
-                    <Animated animationIn="fadeIn" isVisible={true}>
-                        <div>
-                            <p>For the past 7 years I built many projects using the following technolgies and I strive to continually improve upon my skills:</p>
+                            <p>My core skillset consists of:</p>
                         </div>
                     </Animated>
                     <div className={s.techIconsContainer}>
@@ -142,22 +116,7 @@ class TextCard extends Component {
                     <FontAwesomeIcon icon={faAngleRight} className={s.navIcon} />
                 </button>
             );
-        } else if (this.state.activeSection === 2 || this.state.activeSection === 3) {
-            return (
-                <div className={s.horizontalButtonsContainer}>
-                    <div className={s.horizontalButtons}>
-                        <button onClick={this.prevSlide} className={s.navButton}>
-                            <FontAwesomeIcon icon={faAngleLeft} className={s.navIcon} />
-                            <span className={s.buttonText}>Back</span>
-                        </button>
-                        <button onClick={this.nextSlide} className={s.navButton}>
-                            <span className={s.buttonText}>Next</span>
-                            <FontAwesomeIcon icon={faAngleRight} className={s.navIcon} />
-                        </button>
-                    </div>
-                </div>
-            );
-        } else if (this.state.activeSection === 4) {
+        } else if (this.state.activeSection === 2) {
             return (
                 <div className={s.horizontalButtonsContainer}>
                     <div className={s.horizontalButtons}>

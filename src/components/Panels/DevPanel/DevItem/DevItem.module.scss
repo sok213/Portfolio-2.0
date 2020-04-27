@@ -2,20 +2,30 @@
 @import '../../../styles/common.scss';
 
 .devItemContainer {
-    @extend .subtleShadow;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    border-radius: 3px;
-    flex-grow: 1;
-    flex: 1 0 auto;
-    display: flex;
-    cursor: pointer;
-    
-    p {
-        color: black;
-    }
+
+  @extend .subtleShadow;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 3px;
+  flex-grow: 1;
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  
+  p {
+      color: black;
+  }
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: row;
+  }
 }
 
 .hrefContainer {
@@ -37,6 +47,7 @@
     flex: 1 0 auto;
     transition: 0.4s;
     align-items: center;
+    padding-bottom: 25px;
 
     &:hover {
         background-color: rgba(63, 56, 77, 0.65);
@@ -98,16 +109,24 @@
 }
 
 .viewCta {
-    cursor: pointer;
-    pointer-events: hover;
-    font-weight: 900;
-    background-color: rgba(255, 255, 255, 0);
-    border: thin solid rgb(255, 212, 156);
-    color: rgb(255, 212, 156);;
-    margin-top: 20px;
-    border-radius: 2px;
-    height: 50px;
-    width: 130px;
-    font-size: 14px;
-    transition: 0.3s;
+  cursor: pointer;
+  pointer-events: hover;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0);
+  border: thin solid rgb(255, 212, 156);
+  color: rgb(255, 212, 156);;
+  margin-top: 20px;
+  border-radius: 2px;
+  height: 50px;
+  width: 130px;
+  font-size: 14px;
+  transition: 0.3s;
+
+  @media screen and (max-width: 1100px) {
+    margin: 10px 5px 0px 5px;
+  }
+
+  @media screen and (max-width: 740px) {
+    margin-top: 20px
+  }
 }

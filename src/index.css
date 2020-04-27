@@ -16,5 +16,5 @@ code {
 
 /* TODO: only enable overflow: hidden during transition animation for Dev panel. */
 html, body {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }

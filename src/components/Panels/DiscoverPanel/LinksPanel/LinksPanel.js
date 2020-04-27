@@ -23,7 +23,7 @@ class LinksPanel extends Component {
         return (
             <div className={s.linksPanelContainer}>
                 <div className={s.linksPanel}>
-                    <h3>Connect</h3>
+                    <h3 className={s.header}>Connect</h3>
                     <div className={s.underline}></div>
                     <ul className={s.socialMediaLinks}>
                         <li>

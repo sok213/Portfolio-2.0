@@ -38,6 +38,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className={s.App}>
+        <NavigationBar 
+					navigateTo={this.navigateTo}
+				/>
 				<div className={s.panelContainer}>
 					<Panels
 						rendering={this.state.rendering} 
@@ -46,9 +49,6 @@ class App extends Component {
 						prevSlide={this.prevSlide}
 					/>
 				</div>
-				<NavigationBar 
-					navigateTo={this.navigateTo}
-				/>
 			</div>
 		);
 	}

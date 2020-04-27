@@ -1,5 +1,11 @@
 @import '../../../styles/typography.scss';
 @import '../../../styles/common.scss';
+
+.header {
+  font-size: 24px;
+  color: black;
+  padding-bottom: 24px;
+}
  
 .linksPanelContainer {
     display: flex;

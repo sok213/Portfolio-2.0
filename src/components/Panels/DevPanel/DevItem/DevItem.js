@@ -58,18 +58,20 @@ class DevItem extends Component {
                             <h2>{title}</h2>
                             <div className={s.underline}></div>
                             {description}
-                            <button 
-                              className={s.viewCta}
-                              onClick={this.openLink.bind(null, url)}
-                            >
-                              View Project
-                            </button>
-                            <button 
-                              className={s.viewCta}
-                              onClick={this.openLink.bind(null, githubLink)}
-                            >
-                              Source Code
-                            </button>
+                            <div className={s.ctaContainer}>
+                              <button 
+                                className={s.viewCta}
+                                onClick={this.openLink.bind(null, url)}
+                              >
+                                View Project
+                              </button>
+                              <button 
+                                className={s.viewCta}
+                                onClick={this.openLink.bind(null, githubLink)}
+                              >
+                                Source Code
+                              </button>
+                            </div>
                         </div>
                     </div>
                 {/* </a> */}
