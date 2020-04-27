@@ -26,7 +26,7 @@ class TextCard extends Component {
                     <Animated animationIn="slideInLeft" isVisible={true}>
                         <div>
                             <h1>About me.</h1>
-                            <p>I started writing code in 2011, got my first developer job in 2017 and ever since then I’ve been hooked on building fast, pretty, and functional user interfaces with my favorite language – JavaScript! I am a self-taught developer which means that I learned how to program and build websites by reading the plethora of tutorials, documentation, watching videos on the internet, and having technical discussions within programming forums such as freeCodeCamp.org and reddit. Most of all, I learned a lot from my co-workers who past on their knowledge to me.</p>
+                            <p>I started writing code in 2011, got my first developer job in 2017 and ever since then I’ve been hooked on building fast, pretty, and functional user interfaces with my favorite language – JavaScript! I am a self-taught developer which means that I learned how to program and build websites by utlizing the plethora of tutorials, documentation, and videos on the internet. Having technical discussions within programming forums such as freeCodeCamp.org and reddit communities also helped me evolve as a developer. Most of all, I learned a lot from my co-workers who past on their knowledge to me.</p>
                         </div>
                     </Animated>
                     <div className={s.buttonContainer}>
