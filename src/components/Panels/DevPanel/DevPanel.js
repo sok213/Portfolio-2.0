@@ -20,7 +20,7 @@ class DevPanel extends Component {
                     desc: <p>A lightweight accordion component wrapped as an NPM package.</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
-                    url: 'http://torrespacking.com/',
+                    url: 'https://www.npmjs.com/package/simple-react-accordion',
                     githubLink: 'https://github.com/sok213/simple-react-accordion-npm-package'
                 },
                 {
@@ -36,7 +36,7 @@ class DevPanel extends Component {
                     desc: <p>A lightweight simple dashboard that provides news, weather, and a checklist module to help you keep your day organized and up to date with an aesthetically pleasing design.</p>,
                     animation: 'fadeInRight',
                     thumbnail: 3,
-                    url: 'https://sok213.github.io/psd-to-html/',
+                    url: 'https://myminimaldash.herokuapp.com/',
                     githubLink: 'https://github.com/sok213/MyMinimalDashboard'
                 }
             ]
