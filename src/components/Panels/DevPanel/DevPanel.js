@@ -16,7 +16,7 @@ class DevPanel extends Component {
         this.state = {
             devItems: [
                 {
-                    title: 'React Accordion NPM Package',
+                    title: 'Simple React Accordion',
                     desc: <p>A lightweight accordion component wrapped as an NPM package.</p>,
                     animation: 'fadeInLeft',
                     thumbnail: 1,
